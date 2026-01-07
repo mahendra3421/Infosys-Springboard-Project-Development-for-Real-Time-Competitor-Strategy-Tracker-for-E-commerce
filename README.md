@@ -1,0 +1,2 @@
+# Infosys-Springboard-Project-Development-for-Real-Time-Competitor-Strategy-Tracker-for-E-commerce
+The Real-Time Competitor Strategy Tracker for E-Commerce is a data-driven system that collects and analyzes product details and prices from competitor websites to compare them with internal pricing. It helps identify price gaps, monitor discounts and availability, and support smarter, analytics-based business decisions.
