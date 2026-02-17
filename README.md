@@ -151,14 +151,34 @@ Extract customer intelligence using deep NLP and semantic similarity techniques 
 
 ---
 
-## 🧪 Results
+# 🚀 Milestone 4: Cross-Platform Integration & Notification System Deployment
+
+
+### 🎯 Overview
+Milestone 4 marks the transition from static data analysis to a Live Market Intelligence System. This phase focused on bridging two distinct web environments—the source catalog and a global market API—using Semantic Intelligence to ensure 100% product matching accuracy. The result is an automated agent that not only identifies price gaps but also generates a real-time competitive pricing strategy.
+
+## 🧠 Core Intelligence: Semantic Embedding
+The primary challenge of this milestone was the "Identity Problem": matching a book title from the source (which lacked standardized IDs) to a competitor’s ISBN-13 database.
+
+- Vector Space Mapping
+Instead of traditional keyword matching, I implemented the SentenceTransformer ('all-MiniLM-L6-v2') model.
+
+The Logic: Book titles are converted into high-dimensional numerical vectors (Embeddings).
+The Advantage: The AI "understands" that 'orange: The Complete Collection 1' and 'Orange (Complete Edition) Vol 1' are the same entity, even if the characters don't match exactly.
+- Semantic Similarity Validation
+Using util.cos_sim (Cosine Similarity), the agent calculates a confidence score between the source title and the Google Books database.
+**
+Threshold: A 70% similarity barrier was implemented. If the AI isn't at least 70% confident in the match, the record is discarded to prevent "Pricing Hallucinations."**
+---
+
+### 🧪 Results
 - Generated `milestone3_popularity_report.csv`  
 - Strong semantic clustering observed  
 - RoBERTa outperformed traditional NLP models on complex themes  
 
 ---
 
-## ▶️ Execution
+### ▶️ Execution
 ```bash
 pip install transformers torch scikit-learn pandas nltk
 python milestone3_analysis.py
