@@ -177,8 +177,3 @@ Threshold: A 70% similarity barrier was implemented. If the AI isn't at least 70
 - RoBERTa outperformed traditional NLP models on complex themes  
 
 ---
-
-### ▶️ Execution
-```bash
-pip install transformers torch scikit-learn pandas nltk
-python milestone3_analysis.py
